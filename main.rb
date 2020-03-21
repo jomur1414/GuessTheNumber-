@@ -1,16 +1,28 @@
-
+require 'artii'
 
 #Guess the number code 
 
 
 def intro()
-puts("Welcome to GuessTheNumber game")
 
-puts ("Please enter your name")
+    
+nameArtii = Artii::Base.new
+
+
+puts(nameArtii.asciify("Number Guessing Game"))
+
+puts ("Welcome to this fabulous number guessing game")
+
+puts ("Please enter your name :  ")
+
 
 name = gets.chomp
 
-puts ("Hi  " + name)
+
+puts(nameArtii.asciify("Hi " + name))
+
+
+# puts ("Hi  " + name)
 
 end
 
@@ -89,8 +101,6 @@ end
 def gameItSelf(gameParameterNumber, gameParameterNumGuess)
 
     puts ("Try a number")
-
-    puts gameParameterNumber
 
     guess = gets.chomp.to_i
 
