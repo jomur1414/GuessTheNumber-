@@ -31,28 +31,26 @@ puts("Please select difficulty between :
 end
 
 
-
-
 def gameParameterNumber(difficulty)
 
     if difficulty == 1 
-        puts ("Random number between 1 and 10")
+        puts ("The number is between 1 and 10")
       return  numberToGuess = rand(1..10)
     end
     if difficulty == 2 
-        puts ("Random number between 1 and 10")
+        puts ("The number is between 1 and 10")
       return  numberToGuess = rand(1..10)
     end
     if difficulty == 3
-        puts ("Random number between 1 and 100")
+        puts ("The number is between 1 and 100")
       return  numberToGuess = rand(1..100)
     end
     if difficulty == 4
-        puts ("Random number between 1 and 500")
+        puts ("The number is between 1 and 500")
       return  numberToGuess = rand(1..500)
     end
     if difficulty == 5
-        puts ("Random number between 1 and 1000")
+        puts ("The number is between 1 and 1000")
       return  numberToGuess = rand(1..1000)
     end
 
@@ -65,23 +63,23 @@ def gameParameterNumGuess(difficulty)
 
 
     if difficulty == 1 
-        puts ("You got infinite try")
+        puts ("You got infinite try, good luck !")
         return  numberOfGuess = x
     end
     if difficulty == 2 
-        puts ("You got 5 try")
+        puts ("You got 5 try, good luck !")
         return  numberOfGuess = 5
     end
     if difficulty == 3 
-        puts ("You got 6 try")
+        puts ("You got 6 try, good luck !")
         return  numberOfGuess = 6
     end
     if difficulty == 4 
-        puts ("You got 8 try")
+        puts ("You got 8 try, good luck !")
         return  numberOfGuess = 8
     end
     if difficulty == 5 
-        puts ("You got 9 try")
+        puts ("You got 9 try, good luck !")
         return  numberOfGuess = 9
     end
 
@@ -134,7 +132,7 @@ end
 def menu()
 
    
-    puts("Please select an option, to play press 1, to leave press 2")
+    puts("Please select an option : to play press 1, to leave press 2")
 
     menuChoice = gets.chomp.to_i
 
